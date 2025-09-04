@@ -467,6 +467,28 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Botão Flutuante WhatsApp */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 2000;
+        transition: background 0.3s, transform 0.3s;
+    }
+    .whatsapp-float:hover {
+        background-color: #128c7e;
+        transform: scale(1.08);
+    }
     </style>
 </head>
 <body>
@@ -643,6 +665,7 @@
                         <li><a href="#">Computação em Nuvem</a></li>
                         <li><a href="#">Segurança Cibernética</a></li>
                         <li><a href="#">Consultoria em TI</a></li>
+                        <li><a href="#">Inteligência Artificial</a></li>
                         <li><a href="#">Suporte Técnico</a></li>
                     </ul>
                 </div>
@@ -662,5 +685,9 @@
             </div>
         </div>
     </footer>
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5569993266008" class="whatsapp-float" target="_blank" title="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
